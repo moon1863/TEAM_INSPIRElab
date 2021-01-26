@@ -1,0 +1,49 @@
+<repast.simphony.data2.engine.DataSetDescriptor simphonyVersion="2.7.0">
+  <name>Want to Charge</name>
+  <type>AGGREGATE</type>
+  <inclTick>true</inclTick>
+  <inclBatchRun>false</inclBatchRun>
+  <inclRandomSeed>false</inclRandomSeed>
+  <scheduleParams>
+    <start>1.0</start>
+    <interval>1.0</interval>
+    <priority>-Infinity</priority>
+    <pType>LAST</pType>
+    <duration>-1.0</duration>
+    <frequency>REPEAT</frequency>
+    <hashCode>2128371427</hashCode>
+  </scheduleParams>
+  <atEnd>false</atEnd>
+  <methodDataSources class="linked-hash-map">
+    <entry>
+      <string>Want to Charge</string>
+      <repast.simphony.data2.engine.MethodDataSourceDefinition>
+        <id>Want to Charge</id>
+        <className>team.vehicle.Vehicle</className>
+        <methodName>isWantCharge</methodName>
+        <aggType>SUM</aggType>
+      </repast.simphony.data2.engine.MethodDataSourceDefinition>
+    </entry>
+    <entry>
+      <string>Can Charge</string>
+      <repast.simphony.data2.engine.MethodDataSourceDefinition>
+        <id>Can Charge</id>
+        <className>team.vehicle.Vehicle</className>
+        <methodName>isCanCharge</methodName>
+        <aggType>SUM</aggType>
+      </repast.simphony.data2.engine.MethodDataSourceDefinition>
+    </entry>
+    <entry>
+      <string>Is at Home</string>
+      <repast.simphony.data2.engine.MethodDataSourceDefinition>
+        <id>Is at Home</id>
+        <className>team.vehicle.Vehicle</className>
+        <methodName>isAtHome</methodName>
+        <aggType>SUM</aggType>
+      </repast.simphony.data2.engine.MethodDataSourceDefinition>
+    </entry>
+  </methodDataSources>
+  <countSources class="linked-hash-map"/>
+  <customNADataSources class="linked-hash-map"/>
+  <customAggDataSources class="linked-hash-map"/>
+</repast.simphony.data2.engine.DataSetDescriptor>

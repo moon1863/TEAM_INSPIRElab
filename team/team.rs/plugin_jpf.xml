@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE plugin PUBLIC "-//JPF//Java Plug-in Manifest 0.6" "http://jpf.sourceforge.net/plugin_0_6.dtd">
+<plugin id="MyPlugin" version="1.0">
+
+  <requires>
+           <import plugin-id="repast.simphony.gui"  reverse-lookup="true"/>
+     </requires>
+    
+     <extension plugin-id="repast.simphony.gui" point-id="tick.label.formatter" id="my.tick.formatter">
+           <parameter id="class" value="team.tool.MyTickFormatter"/>
+     </extension>
+    
+</plugin>
